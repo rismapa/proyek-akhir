@@ -8,7 +8,7 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-4 px-5">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 px-5">
       @include('layouts.header')
     </nav>
 
