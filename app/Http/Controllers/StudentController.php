@@ -1,11 +1,24 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Student;
 
 use Illuminate\Http\Request;
 
 class StudentController extends Controller
 {
+    public function index() {
+        $students = Student::all();
+
+    //Memecah object students ke dalam student
+    foreach ($students as $student) {
+        echo "<br />Nama : " . $student->name;
+        echo "<br />NRP : " . $student->code;
+        echo "<br />Kelas : " . $student->group;
+    }
+    
+    }
+
     // Attribute dari class Student Controller
     private $code = "160613001";
     private $name = "Ana";

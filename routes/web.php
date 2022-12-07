@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\PersonController;
+use App\Student;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -35,3 +36,17 @@ Route::get('/my-academic/grade/{course}/{task}/{quiz}/{mid_term}/{final}', [Stud
 // Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// Route::get('student/index', function() {
+//     // Eloquent ORM untuk Select All Data 
+//     $students = Student::all();
+
+//     //Memecah object students ke dalam student
+//     foreach ($students as $student) {
+//         echo "<br />Nama : " . $student->name;
+//         echo "<br />NRP : " . $student->code;
+//         echo "<br />Kelas : " . $student->group;
+//     }
+// });
+
+Route::get('student/index', 'StudentController@index')->name('student.index');
