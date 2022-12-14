@@ -21,6 +21,9 @@
             <li><a class="dropdown-item" href="{{ route('person.create') }}">Tambah Person</a></li>
           </ul>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ route('student.index') }}">Student</a>
+        </li>
       </ul>
     </div>
   </div>

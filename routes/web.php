@@ -50,3 +50,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 // });
 
 Route::get('student/index', 'StudentController@index')->name('student.index');
+
+Auth::routes();
